@@ -13,6 +13,7 @@
     <style>
         html { background: #040404; height: 100%; }
         body { display: grid; align-items: center; min-height: 100vh; margin: 0; }
+        a.logo { color: #fff; }
         a .icon { transform-origin: 50% 50%; transition: all 1.5s ease-out; width: 256px; height: 256px; }
         a:hover .icon { transform: rotate3d(0, 0, 1, 1080deg); transition: all 100s linear; }
         h1 svg { height: 60px; max-width: 90%; display: block; margin: 0 auto; color: #fff; transition: transform .3s ease-out; }
@@ -24,8 +25,8 @@
 </head>
 <body>
 <div style="display: flex; flex-direction: column; align-items: center;">
-    <a href="/">
-        <img class="icon" src="/phpcolor.png" alt="PHP Color Logo">
+    <a href="/" class="logo">
+        <img class="icon" src="/phpcolor.png" alt="PHP Color Logo" fetchpriority="high">
     </a>
     <h1>
         <a href="/" title="PHPColor - PHP Color Library">
